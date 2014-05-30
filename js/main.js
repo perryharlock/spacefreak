@@ -48,6 +48,11 @@ $(document).ready(function(){
 		localStorage.setItem('totalQuestions', 0);
 	});
 
+	// Fill in scores
+	if ($('[data-role=score]')) {
+		$('[data-role="score"]').html(localStorage.totalScore + ' out of ' + localStorage.totalQuestions);
+	}
+
 	// The answers!
 	function answers() {
 		return [
@@ -55,10 +60,7 @@ $(document).ready(function(){
 		"3",
 		"2",
 		"2",
-		"1",
-		"1",
-		"2",
-		"3"
+		"1"
 		];
 	}
 

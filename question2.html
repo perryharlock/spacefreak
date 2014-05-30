@@ -17,7 +17,7 @@
 	<header class="header">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 col-md-offset-3">
+				<div class="col-md-6 col-md-offset-3 text-center">
 					<a href="index.html">
 						<h1>Spacefreak</h1>
 					</a>
@@ -29,23 +29,52 @@
 	<section>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 col-md-offset-3">
+				<div class="col-md-6 col-md-offset-3 text-center">
 					<h2>Question 2</h2>
 					<h3 class="question">This creepy space is part of a prestigious venue! Which one?</h3>
 					<img class="question-image" src="img/q2image.jpg" alt="q2 image" />
-					<form action="post">
-						<input type="radio" name="q2" value="1">Old Billingsgate<br/>
-						<input type="radio" name="q2" value="2">Westminster Abbey<br/>
-						<input type="radio" name="q2" value="3">Somerset House<br/>
+					<form action="post" class="text-left">
+						<div class="radio">
+							<label>
+								<input type="radio" name="q2" value="1">Old Billingsgate
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="q2" value="2">Westminster Abbey
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="q2" value="3">Somerset House
+							</label>
+						</div>
 					</form>
 					<div data-role="error" class="error hidden">
 						Duh!!! You need to select an answer ;-)
 					</div>
 					<a data-role="submit-answer" data-question="2" href="question3.html" class="btn btn-primary upper">Next Question <span class="glyphicon glyphicon-play"></span></a>
+					<a data-role="reset" href="question1.html" class="btn upper">Reset <span class="glyphicon glyphicon-refresh"></span></a>
 				</div>
 			</div>
 		</div>
 	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center">
+					<p>This hack project has been brought to you by :
+					<ul>
+						<li>Adele Sicarius</li>
+						<li>Laura Richards</li>
+						<li>Perry Harlock</li>
+					</ul>
+					We are frickin' awesome
+				</div>
+			</div>
+		</div>
+	</footer>
 
 	<!-- Javascript loveliness. -->
 	<script type="text/javascript" src="js/jquery.js"></script>

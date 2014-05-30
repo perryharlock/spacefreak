@@ -5,7 +5,7 @@
 <head>
 
 	<meta charset="utf-8" />
-	<title>spacefreak venue quiz</title>
+	<title>your spacefreak venue quiz score</title>
 
 	<!-- For mobile devices. -->
 	<meta name="viewport" content="width=device-width"/>
@@ -17,7 +17,7 @@
 	<header class="header">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 col-md-offset-3 text-center">
+				<div class="col-md-6 col-md-offset-3">
 					<a href="index.html">
 						<h1>Spacefreak</h1>
 					</a>
@@ -29,9 +29,21 @@
 	<section>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 col-md-offset-3 text-center">
-					<p>Answer as many questions about hire space venues as you can and see if you can get onto the leaderboard!</p>
-					<a href="question1.html" class="btn btn-primary upper">Hell yeah! <span class="glyphicon glyphicon-play"></span></a>
+				<div class="col-md-6 col-md-offset-3">
+					<h2>Your score</h2>
+					<p>
+						You scored <span data-role="score"></span>
+					</p>
+					<form>
+						<div>
+							<label>
+								Pop your name in here and get on the leaderboard!
+								<input class="text-input" type="text" placeholder="type your name here" />
+							</label>
+						</div>
+					</form>
+					<a href="leaderboard.html" class="btn btn-primary upper">Leaderboard <span class="glyphicon glyphicon-play"></span></a>
+					<a data-role="reset" href="question1.html" class="btn upper">Play again! <span class="glyphicon glyphicon-refresh"></span></a>
 				</div>
 			</div>
 		</div>
@@ -52,5 +64,9 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- Javascript loveliness. -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js" ></script>
 
 </body>

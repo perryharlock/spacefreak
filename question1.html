@@ -17,7 +17,7 @@
 	<header class="header">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 col-md-offset-3">
+				<div class="col-md-6 col-md-offset-3 text-center">
 					<a href="index.html">
 						<h1>Spacefreak</h1>
 					</a>
@@ -29,14 +29,26 @@
 	<section>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 col-md-offset-3">
+				<div class="col-md-6 col-md-offset-3 text-center">
 					<h2>Question 1</h2>
 					<h3 class="question">Which Studio Spaces venue is this?</h3>
 					<img class="question-image" src="img/q1image.jpg" alt="q1 image" />
-					<form action="post">
-						<input type="radio" name="q1" value="1">E1<br/>
-						<input type="radio" name="q1" value="2">E2<br/>
-						<input type="radio" name="q1" value="3">E3<br/>
+					<form action="post" class="text-left">
+						<div class="radio">
+							<label>
+								<input type="radio" name="q1" value="1">E1
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="q1" value="2">E2
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="q1" value="3">E3
+							</label>
+						</div>
 					</form>
 					<div data-role="error" class="error hidden">
 						Duh!!! You need to select an answer ;-)
@@ -47,6 +59,22 @@
 			</div>
 		</div>
 	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center">
+					<p>This hack project has been brought to you by :
+					<ul>
+						<li>Adele Sicarius</li>
+						<li>Laura Richards</li>
+						<li>Perry Harlock</li>
+					</ul>
+					We are frickin' awesome
+				</div>
+			</div>
+		</div>
+	</footer>
 
 	<!-- Javascript loveliness. -->
 	<script type="text/javascript" src="js/jquery.js"></script>
