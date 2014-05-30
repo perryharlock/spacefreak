@@ -31,17 +31,25 @@
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3">
 					<h2>Question 1</h2>
-					<h3 class="question">Which Studio Spaces venus is this?</h3>
+					<h3 class="question">Which Studio Spaces venue is this?</h3>
 					<img class="question-image" src="img/q1image.jpg" alt="q1 image" />
 					<form action="post">
-						<input type="radio" name="q1" value="e1">E1<br/>
-						<input type="radio" name="q1" value="e2">E2<br/>
-						<input type="radio" name="q1" value="e3">E3<br/>
+						<input type="radio" name="q1" value="1">E1<br/>
+						<input type="radio" name="q1" value="2">E2<br/>
+						<input type="radio" name="q1" value="3">E3<br/>
 					</form>
-					<a href="your-score.html" class="btn btn-primary upper">Next Question <span class="glyphicon glyphicon-play"></span></a>
+					<div data-role="error" class="error hidden">
+						Duh!!! You need to select an answer ;-)
+					</div>
+					<a data-role="submit-answer" data-question="1" href="question2.html" class="btn btn-primary upper">Next Question <span class="glyphicon glyphicon-play"></span></a>
+					<a data-role="reset" href="question1.html" class="btn upper">Reset <span class="glyphicon glyphicon-refresh"></span></a>
 				</div>
 			</div>
 		</div>
 	</section>
+
+	<!-- Javascript loveliness. -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js" ></script>
 
 </body>

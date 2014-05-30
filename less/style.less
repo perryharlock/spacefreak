@@ -97,7 +97,7 @@ h2 {
 	font-weight: bold;
 	margin-top: 10px;
 
-	&:hover {
+	&:hover, &:active, &:focus {
 		color: #fff;
 	}
 
@@ -130,4 +130,13 @@ h2 {
 }
 .question-image {
 	border: solid 8px #03aa69;
+}
+.error {
+	padding:15px;
+	background-color: #b73030;
+	border: 2px solid darken(#b73030, 10%);
+	color: #fff;
+	font-size:22px;
+	line-height: 1.4;
+	margin:15px 0;
 }

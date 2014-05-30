@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en-GB">
+
+<head>
+
+	<meta charset="utf-8" />
+	<title>spacefreak venue quiz</title>
+
+	<!-- For mobile devices. -->
+	<meta name="viewport" content="width=device-width"/>
+
+	<link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
+
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<a href="index.html">
+						<h1>Spacefreak</h1>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<h2>Question 3</h2>
+					<h3 class="question">Which of these bands is NOT playing in the Somerset House courtyard this summer?</h3>
+					<img class="question-image" src="img/q3image.jpg" alt="q2 image" />
+					<form action="post">
+						<input type="radio" name="q3" value="1">Bastille<br/>
+						<input type="radio" name="q3" value="2">Gorillaz<br/>
+						<input type="radio" name="q3" value="3">Little Dragon<br/>
+					</form>
+					<div data-role="error" class="error hidden">
+						Duh!!! You need to select an answer ;-)
+					</div>
+					<a data-role="submit-answer" data-question="3" href="question4.html" class="btn btn-primary upper">Next Question <span class="glyphicon glyphicon-play"></span></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Javascript loveliness. -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js" ></script>
+
+</body>
