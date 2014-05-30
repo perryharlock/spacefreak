@@ -1,0 +1,24 @@
+{
+  "name": "spacefreak",
+  "version": "0.0.0",
+  "description": "spacefreak ==========",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-less": "~0.11.0",
+    "grunt-contrib-watch": "~0.6.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/perryharlock/spacefreak.git"
+  },
+  "author": "Perry Harlock",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/perryharlock/spacefreak/issues"
+  },
+  "homepage": "https://github.com/perryharlock/spacefreak"
+}
