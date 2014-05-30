@@ -51,8 +51,19 @@ $(document).ready(function(){
 	// Fill in scores
 	if ($('[data-role=score]')) {
 		$('[data-role="score"]').html(localStorage.totalScore + ' out of ' + localStorage.totalQuestions);
+		$('[data-role="score-description"]').html(descriptions()[localStorage.totalScore - 1]);
 	}
 
+	function descriptions() {
+		return [
+		"Old and Rusty and like the Victoria Tube Carriage at Walthamstow - you're going nowhere fast.",
+		"1",
+		"Like the Safehouses in Peckham, whilst you've got a lot of potential, you just aren't quite there yet. You've let yourself go, peeling paint and a sligthly damp smell. You think you're a cool derelict venue - we think you're a run down set of public loos.",
+		"3",
+		"Like Tanner and Co, you're a rising star on the events scene. More practice and fewer scotch eggs, you'll be a winner.",
+		"5"
+		]
+	}
 	// The answers!
 	function answers() {
 		return [
