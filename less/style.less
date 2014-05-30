@@ -36,7 +36,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 html {
     font-size: 62.5%;
-    background-color: #fff;
+    background-color: #f2f2f2;
     color: #525252;
 }
 
@@ -44,7 +44,7 @@ body {
 	font-size: 18px;
 	line-height: 24px;
 	font-family: "OpenSans", Helvetica, Arial, sans-serif;
-	background: #fff;
+	background: #f2f2f2;
 }
 
 a {
@@ -93,6 +93,9 @@ h4 {
 }
 .text-left {
 	text-align: left;
+}
+.text-right {
+	text-align: right;
 }
 .upper {
 	text-transform: uppercase;
@@ -204,4 +207,31 @@ h4 {
 		font-family: Streetwear, Helvetica, Arial, sans-serif;
 		text-shadow:-1px -1px 0 #525252, 1px -1px 0 #525252, -1px 1px 0 #525252, 1px 1px 0 #525252;
 	}
+}
+
+.leaderboard {
+	background-color: #fff;
+	border: solid 1px #dcdcdc;
+	font-size: 20px;
+
+	li {
+		padding: 15px 10px;
+		.clearfix;
+
+		&.title {
+			background-color: #888888;
+		}
+	}
+	.position {
+		width: 10%;
+	}
+	.name {
+		width: 70%
+	}
+	.total {
+		width: 20%
+	}
+	li:nth-child(even) {
+    	background-color: #f2f2f2;
+    }
 }
