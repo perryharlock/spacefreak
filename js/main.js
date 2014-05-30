@@ -51,17 +51,17 @@ $(document).ready(function(){
 	// Fill in scores
 	if ($('[data-role=score]')) {
 		$('[data-role="score"]').html(localStorage.totalScore + ' out of ' + localStorage.totalQuestions);
-		$('[data-role="score-description"]').html(descriptions()[localStorage.totalScore - 1]);
+		$('[data-role="score-description"]').html(descriptions()[localStorage.totalScore]);
 	}
 
 	function descriptions() {
 		return [
-		"Old and Rusty and like the Victoria Tube Carriage at Walthamstow - you're going nowhere fast.",
-		"1",
-		"Like the Safehouses in Peckham, whilst you've got a lot of potential, you just aren't quite there yet. You've let yourself go, peeling paint and a sligthly damp smell. You think you're a cool derelict venue - we think you're a run down set of public loos.",
-		"3",
-		"Like Tanner and Co, you're a rising star on the events scene. More practice and fewer scotch eggs, you'll be a winner.",
-		"5"
+		"<h5>Spaced Out</h5>Old and Rusty and like the Victoria Tube Carriage at Walthamstow - you're going nowhere fast.",
+		"<h5>Waste of Space</h5>Wuhoh! Like Shoreditch Town Hall, you talk big but you're just a load of empty space.",
+		"<h5>Space Cadet</h5>Like the Safehouses in Peckham, whilst you've got a lot of potential, you just aren't quite there yet. You've let yourself go, peeling paint and a sligthly damp smell. You think you're a cool derelict venue - we think you're a run down set of public loos",
+		"<h5>Space Bar</h5>A Clerkenwell Centre convert - you're keen but just a bit uninspired. We advise some sports event themed promotions.",
+		"<h5>Watch this Space</h5>Like Tanner and Co, you're a rising star on the events scene. More practice and fewer scotch eggs, you'll be a winner.",
+		"<h5>Super Space Freak</h5>Snotty and you deserve to be."
 		]
 	}
 	// The answers!
